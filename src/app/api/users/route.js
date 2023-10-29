@@ -52,7 +52,3 @@ export function DELETE() {
         status: true,
     });
 }
-
-export function PUT() {
-
-}

@@ -7,7 +7,6 @@ import { useContext } from "react";
 import { toast } from "react-toastify";
 
 export default function CustomNavbar() {
-  console.log("Navbar Testing");
   const router = useRouter();
   const context = useContext(UserContext);
 
@@ -15,7 +14,7 @@ export default function CustomNavbar() {
     try {
 
       const result = await logout();
-      console.log(result);
+      // console.log(result);
       toast.success('logged out successfully', {
         position: "top-center"
       })
@@ -29,7 +28,7 @@ export default function CustomNavbar() {
     }
   }
 
-  console.log(context)
+  // console.log(context)
   return (
     <nav className="bg-blue-600 h-16 py-2 px-36 flex justify-between items-center">
       <div className="brand">

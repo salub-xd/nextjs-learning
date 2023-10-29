@@ -9,8 +9,9 @@ export async function GET(request, { params }) {
     const userId = params.userId;
     try {
         const tasks = await Task.find({ userId: userId });
-        console.log(tasks);
-        return NextResponse.json(tasks);
+        const response =  NextResponse.json(tasks);
+        // console.log(response);
+        return response;
 
     } catch (error) {
         console.log(error);

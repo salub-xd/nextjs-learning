@@ -13,7 +13,7 @@ export default function UserProvider({ children }) {
 
             try {
                 const currtUser = await currentUser();
-                console.log(currtUser);
+                // console.log(currtUser);
                 setUser({ ...currtUser });
             } catch (error) {
                 console.log(error);
